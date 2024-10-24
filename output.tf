@@ -3,6 +3,11 @@ output "id" {
   value       = ncloud_login_key.login_key.id
 }
 
+output "name" {
+  description = "The name of login key."
+  value       = ncloud_login_key.login_key.key_name
+}
+
 output "private_key" {
   description = "Generated private key"
   value       = ncloud_login_key.login_key.private_key
