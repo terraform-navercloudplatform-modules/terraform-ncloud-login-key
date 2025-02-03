@@ -11,6 +11,7 @@ output "name" {
 output "private_key" {
   description = "Generated private key"
   value       = ncloud_login_key.login_key.private_key
+  sensitive   = true
 }
 
 output "fingerprint" {
